@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./scss/styles.scss" />
+    <link
+      rel="stylesheet"
+      href="./scss/media-queries.scss"
+      media="(min-width: 1000px)"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="sr-only"></h1>
+      <div class="person-info-container person-info-container">
+        <section class="person-info-container__top-section">
+          <img
+            class="person-info-container__top-section-profile-image"
+            src="./assets/images/image-jeremy.png"
+            alt="user picture"
+          />
+          <p class="person-info-container__top-section-title">
+            Report for <br />
+            <span class="person-info-container__top-section-name"
+              >Jeremy Robson</span
+            >
+          </p>
+        </section>
+        <section class="person-info-container__bottom-section">
+          <p class="person-info-container__daily">Daily</p>
+          <p class="person-info-container__weekly">Weekly</p>
+          <p class="person-info-container__monthly">Monthly</p>
+        </section>
+      </div>
+
+      <div class="information-container information-container--work">
+        <div class="information-container__info-wrapper">
+          <div class="information-container__top-info-wrapper">
+            <p class="information-container__activity"></p>
+            <img
+              class="information-container__dots-icon"
+              src="./assets/images/icon-ellipsis.svg"
+              aria-label="three dots button"
+            />
+          </div>
+          <div class="information-container__bottom-info-wrapper">
+            <h2 class="information-container__hours"></h2>
+            <p class="information-container__total-time"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="information-container information-container--play">
+        <div class="information-container__info-wrapper">
+          <div class="information-container__top-info-wrapper">
+            <p class="information-container__activity"></p>
+            <img
+              class="information-container__dots-icon"
+              src="./assets/images/icon-ellipsis.svg"
+              aria-label="three dots button"
+            />
+          </div>
+          <div class="information-container__bottom-info-wrapper">
+            <h2 class="information-container__hours"></h2>
+            <p class="information-container__total-time"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="information-container information-container--study">
+        <div class="information-container__info-wrapper">
+          <div class="information-container__top-info-wrapper">
+            <p class="information-container__activity"></p>
+            <img
+              class="information-container__dots-icon"
+              src="./assets/images/icon-ellipsis.svg"
+              aria-label="three dots button"
+            />
+          </div>
+          <div class="information-container__bottom-info-wrapper">
+            <h2 class="information-container__hours"></h2>
+            <p class="information-container__total-time"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="information-container information-container--exercise">
+        <div class="information-container__info-wrapper">
+          <div class="information-container__top-info-wrapper">
+            <p class="information-container__activity"></p>
+            <img
+              class="information-container__dots-icon"
+              src="./assets/images/icon-ellipsis.svg"
+              aria-label="three dots button"
+            />
+          </div>
+          <div class="information-container__bottom-info-wrapper">
+            <h2 class="information-container__hours"></h2>
+            <p class="information-container__total-time"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="information-container information-container--social">
+        <div class="information-container__info-wrapper">
+          <div class="information-container__top-info-wrapper">
+            <p class="information-container__activity"></p>
+            <img
+              class="information-container__dots-icon"
+              src="./assets/images/icon-ellipsis.svg"
+              aria-label="three dots button"
+            />
+          </div>
+          <div class="information-container__bottom-info-wrapper">
+            <h2 class="information-container__hours"></h2>
+            <p class="information-container__total-time"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="information-container information-container--self-care">
+        <div class="information-container__info-wrapper">
+          <div class="information-container__top-info-wrapper">
+            <p class="information-container__activity"></p>
+            <img
+              class="information-container__dots-icon"
+              src="./assets/images/icon-ellipsis.svg"
+              aria-label="three dots button"
+            />
+          </div>
+          <div class="information-container__bottom-info-wrapper">
+            <h2 class="information-container__hours"></h2>
+            <p class="information-container__total-time"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ivan</a>.
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

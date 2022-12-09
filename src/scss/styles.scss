@@ -1,0 +1,184 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./variables";
+
+html {
+  font-size: 62.5%;
+  font-family: $font;
+}
+
+body {
+  background-color: $veryDarkBlue;
+}
+
+.main-container {
+  width: 87%;
+  margin: 8rem auto 0;
+}
+
+.person-info-container {
+  background-color: $darkBlue;
+  margin-bottom: 2.2rem;
+  overflow: hidden;
+  border-radius: 2rem;
+
+  &__top-section {
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    gap: 1.55rem;
+    border-radius: 1.2rem;
+    padding: 2.8rem 2.8rem 2.3rem;
+
+    &-profile-image {
+      width: 6.5rem;
+      border: 3px solid #fff;
+      border-radius: 5rem;
+    }
+
+    &-title {
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: $fontLight;
+      line-height: 2.55rem;
+      margin-top: 1.2rem;
+    }
+
+    &-name {
+      font-size: 2.45rem;
+    }
+  }
+
+  &__bottom-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 2.2rem 0.7rem 3.3rem;
+    gap: 1.2rem;
+  }
+
+  &__daily,
+  &__weekly,
+  &__monthly {
+    font-size: 1.8rem;
+    color: $desaturatedBlue;
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  &__weekly {
+    margin-left: 2rem;
+  }
+}
+
+.information-container {
+  &--work {
+    background: url("../assets/images/icon-work.svg") top right 2rem no-repeat
+      $lightRed_work;
+  }
+
+  &--play {
+    background: url("../assets/images/icon-play.svg") top right 2rem no-repeat
+      $softBlue_play;
+  }
+
+  &--study {
+    background: url("../assets/images/icon-study.svg") top right 2rem no-repeat
+      $lightRed_study;
+  }
+
+  &--exercise {
+    background: url("../assets/images/icon-exercise.svg") top right 2rem
+      no-repeat $limeGreen_exercise;
+  }
+
+  &--social {
+    background: url("../assets/images/icon-social.svg") top right 2rem no-repeat
+      $violet_social;
+  }
+
+  &--self-care {
+    background: url("../assets/images/icon-self-care.svg") top right 2rem
+      no-repeat $softOrange_selfCare;
+  }
+
+  padding-top: 4rem;
+  border-radius: 2rem 2rem 3rem 3rem;
+  margin-bottom: 2.2rem;
+
+  &__info-wrapper {
+    border-radius: 1.7rem;
+    padding: 2.8rem 2.4rem 0;
+    background-color: $darkBlue;
+
+    &:hover {
+      filter: brightness(130%);
+      cursor: pointer;
+    }
+  }
+
+  &__top-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+  }
+
+  &__activity {
+    font-size: 1.9rem;
+    color: #fff;
+    margin: 0;
+  }
+
+  &__bottom-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  &__hours {
+    color: #fff;
+    font-weight: 300;
+    font-size: 3.15rem;
+    margin: 0;
+  }
+
+  &__total-time {
+    color: $paleBlue;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 999px) {
+  .main-container {
+    max-width: 40rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  color: #fff;
+}
+.attribution a {
+  color: $blue;
+}
+
+.active {
+  color: #fff;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
