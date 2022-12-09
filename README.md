@@ -6,7 +6,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ![](/design/desktop-preview.jpg)
 
-Link: 
+Link: https://meek-lollipop-fdaa79.netlify.app/
 
 ### Built with:
 
